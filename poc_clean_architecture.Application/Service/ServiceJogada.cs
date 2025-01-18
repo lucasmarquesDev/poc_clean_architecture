@@ -20,7 +20,7 @@ namespace poc_clean_architecture.Application.Service
 
         public async Task<ResultadoJogadaDTO> ProcessarJogada(ObjetoEnum jogadaJogador)
         {
-            var jogadaComputador = await _mediator.Send(new CreateJogadaRequest());
+            var jogadaComputador = await _mediator.Send(new GetJogadaComputerRequest());
 
             if (jogadaComputador.jogada.GetHashCode() == jogadaJogador.GetHashCode())
                 return new ResultadoJogadaDTO(jogadaJogador.ToString(), jogadaComputador.ToString(), "Empate");

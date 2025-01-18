@@ -2,11 +2,11 @@
 
 namespace poc_clean_architecture.Application.UseCases.CreateJogada
 {
-    public sealed class CreateJogadaResponse
+    public sealed class GetJogadaComputerResponse
     {
         public ObjetoEnum jogada { get; set; }
 
-        public CreateJogadaResponse(ObjetoEnum _jogada)
+        public GetJogadaComputerResponse(ObjetoEnum _jogada)
         {
             jogada = _jogada;
         }
