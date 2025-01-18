@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\poc_clean_architecture.Domain\poc_clean_architecture.Domain.csproj" />
+    <ProjectReference Include="..\poc_clean_architecture.Persistence\poc_clean_architecture.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
